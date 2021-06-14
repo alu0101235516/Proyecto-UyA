@@ -25,6 +25,10 @@ function añadir() {
   function redirect() {
 	location.href = "./principal.html"
   }
+
+ function redirectHome() {
+	location.href = "./index.html"
+  }
   
   function change() {
 
