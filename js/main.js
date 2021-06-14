@@ -200,3 +200,11 @@ function removeDatos(elemento){
     location.reload();
 
 }
+
+
+$(document).ready(function() {
+  $('ul.tabs').tabs();
+  $("#btnContinue").click(function() {
+    $('ul.tabs').tabs('select_tab', 'test2');
+  });
+});
