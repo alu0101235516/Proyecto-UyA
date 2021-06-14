@@ -30,14 +30,14 @@
     <main>
       <div class="background">
         <div class="title-page">
-          <h2 class="title-princ" onclick="redirectHome()">ULL GANIZATE</h2>
-          <p id="eslogan-text"><b>Ullganizate es una aplicación destinada a la organización y gestión de tu tiempo, aqui podrás acceder a tu calendario, ver tus últimas actividades o incluso añadir tareas. Descúbrelo!</b></p>
+          <h2 class="title-princ" onclick="redirectHome() tabindex="0"">ULL GANIZATE</h2>
+          <p id="eslogan-text" tabindex="0"><b>Ullganizate es una aplicación destinada a la organización y gestión de tu tiempo, aqui podrás acceder a tu calendario, ver tus últimas actividades o incluso añadir tareas. Descúbrelo!</b></p>
           <center>
-            <img class="image" src="./images/signo-de-github.png" width="50px" height="50px" onclick="RedirectGH()"/>
+            <img tabindex="0" alt="ícono del GitHub de ULL Ganizate"class="image" src="./images/signo-de-github.png" width="50px" height="50px" onclick="RedirectGH()"/>
           </center>
           <footer class="footer">
-            <p id="eslogan1"> ¿No estás registrado?  <button class="btn-Login" id="Login" onclick="Cambio2()">Sign Up</button></p>
-            <p id="eslogan2" style="display: none;"> ¿Ya estás registrado?  <button class="btn-Login" id="Login" onclick="Cambio1()">Log In</button></p>
+            <p tabindex="0" id="eslogan1"> ¿No estás registrado?  <button class="btn-Login" id="Login" onclick="Cambio2()">Sign Up</button></p>
+            <p tabindex="0" id="eslogan2" style="display: none;"> ¿Ya estás registrado?  <button class="btn-Login" id="Login" onclick="Cambio1()">Log In</button></p>
           </footer>
         </div>
 
@@ -45,33 +45,33 @@
           <div class="signup-signin" style="display: none;" id="signup">
             <form id="formularioSignUp">
               <h4 class="title" style="display: block;" id="signupTitle">SIGN UP</h4>
-              <input name="username" type="text" placeholder="username" class="signup-text-name" id="signupUsername"/>
-              <input name="email" type="email" placeholder="email" class="signup-text" id="signupEmail"/>
-              <input name="password" type="password" placeholder="password" class="signup-text" id="signupPassword"/>
-              <input name="password" type="password" placeholder="confirm password" class="signup-text" id="signupPassword2"/>
+              <input tabindex="0" name="username" type="text" placeholder="username" class="signup-text-name" id="signupUsername"/>
+              <input tabindex="0" name="email" type="email" placeholder="email" class="signup-text" id="signupEmail"/>
+              <input tabindex="0" name="password" type="password" placeholder="password" class="signup-text" id="signupPassword"/>
+              <input tabindex="0" name="password" type="password" placeholder="confirm password" class="signup-text" id="signupPassword2"/>
 
-              <button class="btn" type="submit">Sign Up</button>
+              <button tabindex="0" class="btn" type="submit">Sign Up</button>
               
               <p tabindex="0" id="errorCommandULL" style="display: none;"> Se tiene que registrar con un correo institucional (@ull.edu.es)</p>
               <p tabindex="0" id="errorCommandPS" style="display: none;">Las contraseñas no coinciden!</p>
               <p tabindex="0" id="errorCommandPC" style="display: none;">La contraseña tiene que tener más de 6 caracteres!</p>
               <p tabindex="0" id="errorCommandPE" style="display: none;">El usuario o el correo ya están en uso!</p>
 
-              <p id="eslogan22"> ¿Ya estás registrado?  <button class="btn-Login" id="Login" onclick="Cambio1()">Log In</button></p>
+              <p tabindex="0" id="eslogan22"> ¿Ya estás registrado?  <button tabindex="0" class="btn-Login" id="Login" onclick="Cambio1()">Log In</button></p>
             </form>
           </div>
 
           <div class="signup-signin" style="display: block;" id="signin">
             <form id="formularioLogin">
-              <h4 class="title" style="display: block;" id="signinTitle">LOG IN</h4>
-              <input name="email" type="text" placeholder="email" class="signup-text-name" id="signinEmail"/>
-              <input name="password" type="password" placeholder="password" class="signup-text" id="signinPassword"/>
+              <h4 tabindex="0" class="title" style="display: block;" id="signinTitle">LOG IN</h4>
+              <input tabindex="0" name="email" type="text" placeholder="email" class="signup-text-name" id="signinEmail"/>
+              <input tabindex="0" name="password" type="password" placeholder="password" class="signup-text" id="signinPassword"/>
               <div>
-                <p id="errorCommand" style="display: none;">La contraseña o el correo son incorrectos!</p>
+                <p tabindex="0" id="errorCommand" style="display: none;">La contraseña o el correo son incorrectos!</p>
               </div>
-              <button class="btn" type="submit">Log In</button>
+              <button tabindex="0" class="btn" type="submit">Log In</button>
 
-              <p id="eslogan11"> ¿No estás registrado?  <button class="btn-Login" id="Login" onclick="Cambio2()">Sign Up</button></p>
+              <p tabindex="0" id="eslogan11"> ¿No estás registrado?  <button class="btn-Login" id="Login" onclick="Cambio2()">Sign Up</button></p>
             </form>
           </div>
         </div>
