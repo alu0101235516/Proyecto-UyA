@@ -202,9 +202,6 @@ function removeDatos(elemento){
 }
 
 
-$(document).ready(function() {
-  $('ul.tabs').tabs();
-  $("#btnContinue").click(function() {
-    $('ul.tabs').tabs('select_tab', 'test2');
+$(document).ready(function(){
+    $('ul.tabs').tabs('select_tab', 'tab_id');
   });
-});
