@@ -137,7 +137,7 @@ function getDatos(){
             informacion.append(
                 '<div class="card purple darken-2">'
                 +   '<div class="card-content white-text">'
-                +       '<h5> No hay eventos que mostrar </h5>'           
+                +       '<h5 tabindex="0"> No hay eventos que mostrar </h5>'           
                 +   '</div>'
                 +'</div>'
             )
@@ -163,10 +163,10 @@ function getDatos(){
                 informacion.append(
                     '<div class="card purple darken-2">'
                     +           '<div class="card-content white-text">'
-                    +               `<span class="card-title"><b> ${childSnapshot.val().Nombre} </b></span>`
-                    +               `<p><b> ${childSnapshot.val().Tipo}</b> <br> <b> ${childSnapshot.val().Fecha}</b></p><br><br>`
+                    +               `<span tabindex="0" class="card-title"><b> ${childSnapshot.val().Nombre} </b></span>`
+                    +               `<p tabindex="0"><b> ${childSnapshot.val().Tipo}</b> <br> <b> ${childSnapshot.val().Fecha}</b></p><br><br>`
                     +               '<div>'
-                    +                   `<a class="grey lighten-5 btn-large purple-text text-darken-2" id="eliminarEvento${i}" onclick="removeDatos(${i})"> Eliminar evento </a>`
+                    +                   `<a tabindex="0" class="grey lighten-5 btn-large purple-text text-darken-2" id="eliminarEvento${i}" onclick="removeDatos(${i})"> Eliminar evento </a>`
                     +               '</div>'
                     +           '</div>'
                     +'</div>'
