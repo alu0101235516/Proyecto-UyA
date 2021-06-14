@@ -101,6 +101,8 @@ function obtenerUsuario(email){
 
 // Función Insertar datos en bbdd 
 function setDatos() {
+    document.getElementById("confirmacion").style.display = "block";
+    document.getElementById("mostrado-final").style.display = "none";
     if (document.getElementById("nombre-evento").value.toString() != ""){
         const email = firebase.auth().currentUser.email.toString()
         const usuario = obtenerUsuario(email)
